@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>
+    Intermediate in Python
+  </title>
+  <link rel="icon" type="image/png" sizes="512x512" href="Assets/PythonFavicon.png">
+  <link rel="stylesheet" href="pythonbackground.css">
+  <style>
+    h1{
+      text-align: center; 
+      font-size: 20px;
+    } 
+    h2{
+      font-size: 16px;
+    } 
+    h3{
+      border-style: outset;
+      width: 40%;
+    }
+  </style>
+</head>
+
+<body>
+  <font face="Verdana" size="2">
+    <a href="HomePage.html" title="Back to Home Page">
+      &larr; 
+      Home
+    </a>
+	<br>
+	<a href="Basics1.html" title="Previous Guide">
+	  &larr;
+	  Beginner in Python
+	</a>
+    <br>
+    <h1>
+      <img src="Assets/PythonFavicon.png" width="20" height="20">
+      Intermediate in Python 
+      <img src="Assets/PythonFavicon.png" width="20" height="20">
+    </h1>
+    <br>
+	<strong>
+      Preface
+    </strong>
+    <br>
+    This guide is meant to be used only if you already know the basics of Python, which you can find in <a href="Basics1.html">Beginner in Python</a>.<br>
+	Contrary to the previous guide, this guide uses <a href="https://replit.com/languages/python3">Replit</a> as its IDE due to limitations in the machine used to code this site.<br>
+    This only alters the visuals of the examples and not the functionality of the code.<br>
+	<br>
+    <strong>
+      Contents
+    </strong>
+    <br>
+	- Code maintainability<br>
+	- Data types<br>
+	- Loops and iteration<br>
+	- Arrays<br>
+	- Subroutines/Functions<br>
+	- Modules<br>
+	<br>
+	<h2>
+	  Code maintainability
+	</h2>
+	<br>
+	Code maintainability refers to making code easier to read and understand and also making unexpected errors easier to fix.
+	<br>
+	There are 4 main ways to make code more maintainable. Those are:
+	<br>
+	Comments - You can add a comment in Python by using a '#' before your comment. This can make some more complicated code easier to understand by providing a suitable explanation.<br>
+	Modulisation (using modules and functions) - This will be explained later.<br>
+	Indentation - Indentation is required in Python so it makes code more maintainable by default. Indents can be added using the TAB key.<br>
+	Variable names - Having sensible and suitable variable names can help make code easier to follow through and understand the purpose of.<br>
+	
+	<h2>
+	  Data types
+	</h2>
+	<br>
+	There are 4 key data types that variables can have in Python, with some others existing but being more advanced.
+	<br>
+	The 4 data types are:
+	<br>
+	String - A series of characters, also known as text.<br>
+	Integer - A numerical value with no decimal values.<br>
+	Float - A numerical value that does have or may have decimal values.<br>
+	Boolean - A binary value, indicating ON and OFF states only, usually called TRUE and FALSE.<br>
+	
+	<h2>
+	  Loops and iteration
+	</h2>
+	<br>
+	There are two basic types of iterative loops in Python.
+	<br>
+	While loops are condition-controlled iteration, executing their code as long as a certain condition is met.
+	<br>
+	For loops are count-controlled interation, execution their code a certain amount of times before stopping.
+	<br>
+	<h3>
+      <a title="Example 1">
+        <img src="Assets/IntermExamples/Eg1.png" width="240" height="67">
+      </a>
+	  <a title="Example 2">
+        <img src="Assets/IntermExamples/Eg2.png" width="238" height="66">
+      </a>
+    </h3>
+    <br>
+	':' must be placed after the statements otherwise the interpreter will return a SyntaxError.
+	<br>
+	
+	<h2>
+	  Arrays
+	</h2>
+	<br>
+	Arrays can be used to store multiple values in one variable.
+	<h3>
+	  <a title="Example 3">
+		<img src="Assets/IntermExamples/Eg3.png" width="186" height="26">
+	  </a>
+	</h3>
+	<br>
+	To access a specific part of an array you must specify the array and then the position of the value in '[ ]'.<br>
+	It is important to note that the first value of an array has the position '0' and not '1'.<br>
+	<h3>
+	  <a title="Example 4">
+		<img src="Assets/IntermExamples/Eg4.png" width="155" height="43">
+	  </a>
+	  <a title="Example 5">
+		<img src="Assets/IntermExamples/Eg5.png" width="159" height="47">
+	  </a>
+	</h3>
+	<br>
+	There are a number of parameters you can run alongside an array. These include:
+	<br>
+	- append() - Adds an element at the end of the current list.<br>
+	- clear() - Removes all the elements in the list.<br>
+	- count() - Returns the amount of elements in the current list.<br>
+	- insert() - Adds an element at the specified position.<br>
+	- pop() - Removes an element from the specified position.<br>
+	- remove() - Removes the first element with the specified value.<br>
+	
+	<h2>
+	  Subroutines/Functions
+	</h2>
+	<br>
+	Subroutines, which are also known interchangably as Functions, are pieces of code that are defined near the beginning of a program and are useful when the same piece of code needs to be ran multiple times.<br>
+	Using subroutines to make code more maintainable is called modulisation.<br>
+	<h3>
+	  <a title="Example 6">
+		<img src="Assets/IntermExamples/Eg6.png" width="149" height="23">
+	  </a>
+	</h3>
+	<br>
+	Subroutines can also be passed variables when they are being executed, use those variables within their code, and then return variables back to the main piece of code.<br>
+	<h3>
+	  <a title="Example 7">
+		<img src="Assets/IntermExamples/Eg7.png" width="312" height="63">
+	  </a>
+	</h3>
+	<br>
+	When subroutines are used to make code more readable and maintainable, the process is called 'Modulisation'.
+	<br>
+	
+	<h2>
+	  Modules
+	</h2>
+	<br>
+	In complicated programs many subroutines may need to be used.<br>
+	To improve code readability, maintainabilty and efficiency, these subroutines can be stored in a seperate file to the code being executed.<br>
+	To add these subroutines to the executed program, you must use the 'import' statement followed by the name of the Python file containing the subroutines, called the module.<br>
+	After the module is imported, you can run subroutines from it by using its name followed by '.' then the name of the subroutine and the parameters as normal.<br>
+	
+	<h2>
+      Download the raw Examples file
+    </h2>
+    <br>
+    <a href="Intermediate1Examples.py" download="Intermediate1Examples.py">
+      <button type="button">
+        Download
+      </button>
+    </a>
+	<br>
+  </font>
+</body>
+</html>
